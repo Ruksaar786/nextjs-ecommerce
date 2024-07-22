@@ -1,2 +1,3 @@
-# nextjs-ecommerce
-nextjs, ecommerce, prisma, shadcn, typescript, mongodb
+# Nextjs ecommerce site
+
+## tech used
