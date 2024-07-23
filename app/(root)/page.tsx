@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <h1>Home page!</h1>
-      <button>Click to Sign in</button>
+      <Button>Click to Sign in</Button>
     </main>
   );
 }

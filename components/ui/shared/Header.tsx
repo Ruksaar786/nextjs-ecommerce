@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../button";
-import { ShoppingCart, User2Icon, UserIcon } from "lucide-react";
+import { ShoppingCart, User, UserIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -27,9 +27,9 @@ const Header = () => {
           </Button>
 
           <Button asChild>
-            <Link href="/singin">
+            <Link href="/signin">
               <UserIcon />
-              Sign In
+              Sign in
             </Link>
           </Button>
         </div>
