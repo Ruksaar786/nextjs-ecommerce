@@ -10,12 +10,7 @@ const Header = () => {
       <div className="wrapper flex-between">
         <div className="flex-start">
           <Link href="/">
-            <Image
-              src="/icons/logo.svg"
-              alt="ecommerce logo"
-              width={50}
-              height={50}
-            />
+            <Image src="/" alt="ecommerce logo" width={50} height={50} />
           </Link>
         </div>
         <div className="space-x-2">

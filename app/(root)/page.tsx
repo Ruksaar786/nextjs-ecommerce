@@ -1,11 +1,9 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { main } from "ts-node/dist/bin";
+import ProductList from "@/components/ui/shared/product/product-list";
 export default function Home() {
   return (
-    <main>
-      <h1>Home page!</h1>
-      <Button>Click to Sign in</Button>
-    </main>
+    <div className="space-y-8">
+      <h1>Latest Products</h1>
+      <ProductList />
+    </div>
   );
 }
