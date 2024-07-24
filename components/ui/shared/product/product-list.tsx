@@ -1,11 +1,13 @@
 import React from "react";
 import ProductCard from "./product-card";
 import sampleData from "@/lib/sample-data";
+import { getLatestProduct } from "@/lib/action/product.action";
 
-const ProductList = () => {
-    let data= sampleData.products
+const ProductList = async () => {
+  let data = await getLatestProduct();
   return (
     <>
+      <h1>Latest Products</h1>
       {data.length > 0 ? (
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
