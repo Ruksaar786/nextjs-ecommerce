@@ -7,7 +7,7 @@ const ProductList = async () => {
   let data = await getLatestProduct();
   return (
     <>
-      <h1>Latest Products</h1>
+      <h2 className="h2-bold">Latest Products</h2>
       {data.length > 0 ? (
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
