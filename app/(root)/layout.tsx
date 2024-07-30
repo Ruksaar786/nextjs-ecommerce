@@ -30,8 +30,11 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
-        <Toaster />
+        <div className="flex h-screen flex-col">
+          <Header />
+          <main className="flex-1 wrapper">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
