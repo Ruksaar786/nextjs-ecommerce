@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins as FontSans } from "next/font/google";
 import "@/styles/globals.css";
-import Header from "@/components/ui/shared/Header";
-import Footer from "@/components/ui/shared/Footer";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
-
 const fontSans = FontSans({
   subsets: ["latin"],
   weight: ["400", "600"],
@@ -14,7 +11,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Nextjs ecommerce",
-  description: "Ecommerce created with nextjs and tailwind",
+  description: "Ecommerce created with nextjs and tailwind css",
 };
 
 export default function RootLayout({

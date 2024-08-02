@@ -2,7 +2,7 @@
 import prisma from "@/prisma/client";
 import { z } from "zod";
 import bcrypt from "bcryptjs";
-import { signupSchema } from "./signup-form";
+import { signupSchema } from "../signin-form";
 
 export const signUp = async (values: z.infer<typeof signupSchema>) => {
   try {

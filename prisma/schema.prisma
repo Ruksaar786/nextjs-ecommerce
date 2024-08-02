@@ -110,3 +110,37 @@ model Authenticator {
   @@unique([userId, credentialID])
 }
 
+model Cart {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId        String?  @db.ObjectId
+  sessionCartId String
+  items         Json     @default("[]")
+  itemsPrice    Float
+  shippingPrice Float
+  taxPrice      Float
+  totalPrice    Float
+  createdAt     DateTime @default(now())
+  user          User?    @relation(fields: [userId], references: [id])
+
+  @@unique([userId])
+  @@map("cart")
+}
+
+model Address {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  fullName      String
+  streetAddress String
+  city          String
+  postalCode    String
+  country       String
+  lat           Float?
+  lng           Float?
+  userId        String @db.ObjectId
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("address")
+}
