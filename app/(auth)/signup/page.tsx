@@ -11,13 +11,13 @@ import {
 } from "@/components/ui/card";
 import { APP_NAME } from "@/lib/constant";
 
-import {LoginForm} from "./signin-form"
+import { SingUpForm } from "./signup-form";
 
 export const metadata: Metadata = {
   title: `Sign In - ${APP_NAME}`,
 };
 
-export default async function SignIn() {
+export default async function SignUpPage() {
   return (
     <div className="w-full max-w-md mx-auto">
       <Card>
@@ -36,7 +36,7 @@ export default async function SignIn() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <LoginForm />
+          <SingUpForm />
         </CardContent>
       </Card>
     </div>

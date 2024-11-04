@@ -57,17 +57,17 @@ const sampleData = {
         "A tricolour design brings a distinctive edge to these lightweight tracksuit pants made of diamond taffeta. ",
     },
     {
-      name: "Men&#39;s Casual Polo Shirts Classic Button Basic Short Sleeve Shirt.",
+      name: "Men's Casual Polo Shirts Classic Button Basic Short Sleeve Shirt.",
       slug: "polo-shirt-classic-button",
       category: "Polo Shirts",
-      images: ["/assets/images/p5-1.jpeg", "/assets/images/p5-2.jpeg"],
+      images: ["/assets/images/p5-1.jpg", "/assets/images/p5-2.jpg"],
       price: "26",
       brand: "Polo",
       rating: "4.0",
       numReviews: 10,
       stock: 20,
       description:
-        "Men&#39;s Casual Polo Shirts Classic Button Basic Short Sleeve Shirt Solid Color Cotton Tees Golf Stylish Tops,  Cotton and polyester ",
+        "Men's Casual Polo Shirts Classic Button Basic Short Sleeve Shirt Solid Color Cotton Tees Golf Stylish Tops,  Cotton and polyester ",
     },
   ],
 };

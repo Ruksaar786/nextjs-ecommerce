@@ -4,7 +4,7 @@ import ProductPrice from "@/components/ui/shared/product/product-price";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { getProductBySlug } from "@/lib/action/product.action";
-import { APP_NAME } from "@/lib/constants";
+import { APP_NAME } from "@/lib/constant";
 import AddToCart from "@/components/ui/shared/product/add-to-cart";
 import { getMyCart } from "@/lib/action/cart.actions";
 import { round2 } from "@/lib/utils";

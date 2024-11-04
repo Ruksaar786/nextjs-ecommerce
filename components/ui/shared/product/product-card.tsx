@@ -11,9 +11,9 @@ const ProductCard = ({ product }: { product: any }) => {
           <Image
             alt={product.name}
             className="aspect-square object-cover rounded"
+            src={product.images![0]}
             height={300}
             width={300}
-            src={product.images![0]}
           />
         </Link>
       </CardHeader>

@@ -2,9 +2,9 @@
 import prisma from "@/prisma/client";
 import { z } from "zod";
 import bcrypt from "bcryptjs";
-import { signupSchema } from "../signin-form";
+import { singupSchema } from "./signup-form";
 
-export const signUp = async (values: z.infer<typeof signupSchema>) => {
+export const signUp = async (values: z.infer<typeof singupSchema>) => {
   try {
     // if user already exists, throw an error
     const existingUser = await prisma.user.findUnique({

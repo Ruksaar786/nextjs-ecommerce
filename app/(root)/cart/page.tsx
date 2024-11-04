@@ -2,7 +2,8 @@ import { getMyCart } from "@/lib/action/cart.actions";
 import CartForm from "./cart-form";
 import { Cart } from "@prisma/client";
 import { CartItem } from "@/lib/types";
-import { APP_NAME } from "@/lib/constants";
+import { APP_NAME } from "@/lib/constant/index";
+
 export const metadata = {
   title: `Shopping Cart - ${APP_NAME}`,
 };
